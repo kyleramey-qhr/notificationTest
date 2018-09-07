@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Android Bridge Test</title>
+    </head>
+    <body>
+        <button onClick="startCall()">Start Call</button>
+        <button onClick="endCall()">End Call</button>
+
+        <script>
+            function startCall() {
+                Android.onCallStarted();
+            }
+
+            function endCall() {
+                Android.onCallEnded();
+            }
+        </script>
+    </body>
+</html>
